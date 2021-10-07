@@ -69,7 +69,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(mark, PandaPi  config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(danielkrah, PandaPi  config)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 #define PANDAPI  1    // PandaPi shield for raspberry Pi printer
 #define CPU_32_BIT
@@ -77,7 +77,7 @@
 
 //  PANDAPI
 #define  CASE_FAN_SPEED_IDLE  180   // the vaule must within 0~255, e.g the default value is 180, means 70% of the speed.
-#define DGUS_LCD_UI_PANDAPI
+// #define DGUS_LCD_UI_PANDAPI
 //#define DGUS_LCD_UI_MKS
 #if DISABLED(DGUS_LCD_UI_PANDAPI)&&DISABLED(DGUS_LCD_UI_MKS)
 	#define ULTRA_LCD 
@@ -157,7 +157,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-//#define CUSTOM_MACHINE_NAME "3D Printer"
+#define CUSTOM_MACHINE_NAME "Panda Bear"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -2322,7 +2322,7 @@
 // This is RAMPS-compatible using a single 10-pin connector.
 // (For CR-10 owners who want to replace the Melzi Creality board but retain the display)
 //
-//#define CR10_STOCKDISPLAY
+#define CR10_STOCKDISPLAY
 
 //
 // Ender-2 OEM display, a variant of the MKS_MINI_12864
